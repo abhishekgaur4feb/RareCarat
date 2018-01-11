@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<parameter name="price_left" value="9500"></parameter>
+<parameter name="Carat_left" value=".90"></parameter>
+<parameter name="Color_left_param" value="-120"></parameter>
+<parameter name="Color_right_param" value="120"></parameter>
+<parameter name="Cut_left_param" value="-100"></parameter>
+<parameter name="Cut_right_param" value="100"></parameter>
+<parameter name="Clarity_left_param" value="-128"></parameter>
+<parameter name="Clarity_right_param" value="128"></parameter>
+<parameter name="flo_left_param" value="-150"></parameter>
+<parameter name="flo_right_param" value="150"></parameter>
+
+  <test name="Test FIlter_By_Diamond">
+  <parameter name="Browsername" value="chrome"></parameter>
+    <classes>
+      <class name="Filter_By_Diamond_TestCase.Filter_By_Diamond"/>
+      </classes>
+      </test>
+</suite>

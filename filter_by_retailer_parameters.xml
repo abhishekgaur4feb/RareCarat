@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+<parameter name="zipcode" value="74999"></parameter>
+<parameter name="location" value="TexasUnitedStates"></parameter>
+<!-- date_available starts from 0th date -->
+<parameter name="date_available" value="2"></parameter>
+
+<!-- time_available starts from 0th date -->
+<parameter name="time_available" value="4"></parameter>
+  <test name="Test FIlter_By_Retailer">
+  <parameter name="Browsername" value="chrome"></parameter>
+    <classes>
+      <class name="Filter_By_Retailer_TestCase.Filter_By_Retailer"/>
+      </classes>
+      </test>
+</suite>

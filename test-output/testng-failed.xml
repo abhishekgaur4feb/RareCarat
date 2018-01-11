@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="zipcode" value="74999"/>
+  <parameter name="location" value="TexasUnitedStates"/>
+  <parameter name="time_available" value="4"/>
+  <parameter name="date_available" value="2"/>
+  <test name="Test FIlter_By_Retailer(failed)" parallel="tests">
+    <parameter name="Browsername" value="chrome"/>
+    <classes>
+      <class name="Filter_By_Retailer_TestCase.Filter_By_Retailer">
+        <methods>
+          <include name="InvokeBrowser"/>
+          <include name="teardown"/>
+          <include name="Filter_Login"/>
+          <include name="Filter_By_Diamond_TestCase" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Filter_By_Retailer_TestCase.Filter_By_Retailer -->
+    </classes>
+  </test> <!-- Test FIlter_By_Retailer(failed) -->
+</suite> <!-- Failed suite [Suite] -->

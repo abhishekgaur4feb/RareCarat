@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ 
+<!-- <parameter name="Setting_Price_Max" value="2000"></parameter> -->
+<parameter name="Style" value="Solitaire,SideStone,ThreeStone"></parameter>
+<parameter name="Metal" value="fourteen_k_white_gold,eighteen_k_white_gold,fourteen_k_yellow_gold,eighteen_k_yellow_Gold,fourteen_k_rose_gold,eighteen_k_rose_Gold,platinium,palladium"></parameter>
+
+  <test name="Test Filter_By_Settings">
+  <parameter name="Browsername" value="chrome"></parameter>
+    <classes>
+      <class name="Filter_By_Settings_TestCase.Filter_By_Settings"/>
+      </classes>
+      </test>
+</suite> <!-- Suite -->

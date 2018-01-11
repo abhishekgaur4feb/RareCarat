@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="1" thread-count="1" preserve-order="true">
+  <listeners>
+	<listener class-name="Listner_Package.Listner"></listener>
+	 <listener class-name="Listner_Package.ExtentReporterNG"></listener>
+	</listeners>
+	<suite-files>
+	<suite-file path="signup.xml"></suite-file>
+	<suite-file path="login.xml"></suite-file>
+	<suite-file path="filter_by_diamond_parameters.xml"></suite-file>
+	<suite-file path="filter_by_settings.xml"></suite-file>
+	</suite-files>
+</suite>

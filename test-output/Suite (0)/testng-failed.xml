@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite (0)]">
+  <listeners>
+    <listener class-name="Listner_Package.Listner"/>
+    <listener class-name="Listner_Package.ExtentReporterNG"/>
+  </listeners>
+  <test name="Test(failed)">
+    <parameter name="Browsername" value="Chrome"/>
+    <classes>
+      <class name="Signup_Test_Case.Signup">
+        <methods>
+          <include name="InvokeBrowser"/>
+          <include name="teardown"/>
+          <include name="Signup_RareCarat"/>
+        </methods>
+      </class> <!-- Signup_Test_Case.Signup -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite (0)] -->
